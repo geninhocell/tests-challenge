@@ -35,6 +35,7 @@ describe('[Create Statement Use Case]', () => {
 
     const statement = await createStatementUseCase.execute({
       user_id: user.id,
+      send_id: null,
       amount: 100,
       description: 'bank',
       type
@@ -55,6 +56,7 @@ describe('[Create Statement Use Case]', () => {
 
     const statement = await createStatementUseCase.execute({
       user_id: user.id,
+      send_id: null,
       amount: 0,
       description: 'bank',
       type
@@ -76,6 +78,7 @@ describe('[Create Statement Use Case]', () => {
 
       await createStatementUseCase.execute({
         user_id: user.id,
+        send_id: null,
         amount: 100,
         description: 'bank',
         type
@@ -89,6 +92,7 @@ describe('[Create Statement Use Case]', () => {
 
       await createStatementUseCase.execute({
         user_id: 'unregistered_id',
+        send_id: null,
         amount: 100,
         description: 'bank',
         type

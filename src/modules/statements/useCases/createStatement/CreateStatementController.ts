@@ -20,6 +20,7 @@ export class CreateStatementController {
 
     const statement = await createStatement.execute({
       user_id,
+      send_id: null,
       type,
       amount,
       description

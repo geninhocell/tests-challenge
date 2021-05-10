@@ -38,6 +38,7 @@ describe('[Get Statement Operation Use Case]', () => {
       description: 'Test',
       type,
       user_id: user.id,
+      send_id: null,
     });
 
     const statement = await getStatementOperationUseCase.execute({
